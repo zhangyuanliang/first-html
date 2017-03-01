@@ -1,4 +1,4 @@
-###共两个html，sohu是完全仿照sohu网，自己写的html和css；myBlog是自己做了一个博客网站。两个页面效果如下：
+###sohu是sohu网的山寨版，自己写的html和css；myBlog是自己做了一个博客网页。两个页面效果如下：
 ####②sohu（原版）：
 ![Image text](https://github.com/zhangyuanliang/first-html/blob/master/sohu/img/original_1.jpg)
 ####①sohu.html(山寨)：
