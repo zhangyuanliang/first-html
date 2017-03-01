@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>event</title>
+</head>
+
+<body onkeyup="show()">
+<script>
+	/*function test(){
+		var one=document.getElementById("one");
+		if(one.value!=one.value.toUpperCase()){
+			one.value=one.value.toUpperCase();
+		}
+	}
+	function show(){
+		alert(event.keyCode);	//在IE下才能执行
+	}*/
+	
+	var i=1;
+	var dt=null;
+	function start1(){
+		dt=setInterval(function(){
+						var two=document.getElementById("two");
+						two.innerHTML=i;
+						i++;},1000);
+	}
+	function stop1(){
+		clearInterval(dt);
+	}
+	
+	//setInterval(star1,1000);
+</script>
+ <input id="one" type="text" onkeyup="test()"/>
+<div id="two" style="font-size:54px;color:#F00;text-align:center;">0</div>
+<input type="button" value="start" onmousedown="start1()" />
+<input type="button" value="stop" onmouseup="stop1()" />
+</body>
+</html>
